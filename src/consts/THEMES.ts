@@ -1,9 +1,10 @@
+export type Theme = {
+	background: string,
+	base: {primary: string, secondary: string},
+	accents: {primary: string, secondary: string}
+}
 const THEMES: {
-	[key: string]: {
-		background: string,
-		base: {primary: string, secondary: string},
-		accents: {primary: string, secondary: string}
-	}
+	[key: string]: Theme
 } = {
 	light: {
 		background: '#FFFFFF',
@@ -24,7 +25,7 @@ const THEMES: {
 		},
 		accents: {
 			primary: '#270526',
-			secondary: '#191DOC'
+			secondary: '#191D0C'
 		}
     }
 }
